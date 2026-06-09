@@ -23,7 +23,7 @@
 
 ```text
 rirekisyo_photo/
-├── convert.py
+├── convert_configurable.py
 ├── config.def
 ├── requirements.txt
 ├── README.md
@@ -42,7 +42,7 @@ rirekisyo_photo/
 基本的にGitに上げるもの:
 
 ```text
-convert.py
+convert_configurable.py
 config.def
 requirements.txt
 README.md
@@ -332,7 +332,7 @@ source .venv/bin/activate
 実行します。
 
 ```bash
-python convert.py
+python convert_configurable.py
 ```
 
 出力例:
@@ -369,7 +369,7 @@ PNG保存
 
 1. `data/` に入力画像を置く
 2. `config.def` の `input_path` を変更する
-3. `python convert.py` を実行する
+3. `python convert_configurable.py` を実行する
 4. `.output/` の画像を確認する
 5. 顔の大きさや位置がズレていたら `config.def` を調整する
 
@@ -420,5 +420,5 @@ face_center_y_ratio = 0.46
 
 ```bash
 source .venv/bin/activate
-python convert.py
+python convert_configurable.py
 ```
