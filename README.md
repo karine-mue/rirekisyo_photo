@@ -422,3 +422,7 @@ face_center_y_ratio = 0.46
 source .venv/bin/activate
 python convert_configurable.py
 ```
+
+## License
+
+MIT License
