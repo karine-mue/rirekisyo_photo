@@ -1,0 +1,18 @@
+# input photos / generated images
+data/
+.output/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# archive
+bk/
+*Zone.Identifier

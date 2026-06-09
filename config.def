@@ -1,0 +1,41 @@
+[app]
+# 入力ファイル
+input_path = ./data/202606091442.jpg
+
+# 出力ディレクトリ
+output_dir = .output
+
+# 出力ファイル名の先頭部分
+# 実際の出力名: {output_basename}_{timestamp}.png
+output_basename = rirekisyo
+
+
+[photo]
+# 履歴書用写真: 横3cm × 縦4cm / 300dpi
+# width,height
+output_size = 354,472
+
+# dpi
+dpi = 300
+
+# 白系背景 RGBA
+# R,G,B,A
+background_color = 250,250,248,255
+
+# 出力画像の高さに対して顔の高さを何%にするか
+# 小さくすると顔が小さく、大きくすると顔が大きくなる
+face_height_ratio = 0.48
+
+# 顔中心を、切り抜き範囲の上から何%の位置に置くか
+# 小さくすると顔が上寄り、大きくすると顔が下寄り
+face_center_y_ratio = 0.42
+
+
+[face_detection]
+# OpenCV Haar Cascade の検出設定
+scale_factor = 1.1
+min_neighbors = 5
+
+# 顔として検出する最小サイズ
+# width,height
+min_size = 80,80
